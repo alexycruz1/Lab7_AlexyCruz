@@ -69,7 +69,7 @@ int main(int argc, char*argv[]){
 
 		  	racional r = racionales[indice1] + racionales[indice2];
 		  	r.simplificar();
-		  	cout << r.toString();
+		  	cout << r;
 		  	cout << endl;
 		}
 
@@ -88,7 +88,7 @@ int main(int argc, char*argv[]){
 
 		  	racional r = racionales[indice1] - racionales[indice2];
 		  	r.simplificar();
-		  	cout << r.toString();
+		  	cout << r;
 		  	cout << endl;
 		}
 
@@ -107,7 +107,7 @@ int main(int argc, char*argv[]){
 
 		  	racional r = racionales[indice1] * racionales[indice2];
 		  	r.simplificar();
-		  	cout << r.toString();
+		  	cout << r;
 		  	cout << endl;
 		}
 
@@ -126,7 +126,7 @@ int main(int argc, char*argv[]){
 
 		  	racional r = racionales[indice1] / racionales[indice2];
 		  	r.simplificar();
-		  	cout << r.toString();
+		  	cout << r;
 		  	cout << endl;
 		}
 

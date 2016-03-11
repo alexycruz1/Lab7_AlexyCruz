@@ -154,3 +154,4 @@ ostream& operator<<(ostream& output, const racional& c){
 	output << noshowpos;
 	return output;
 }
+
