@@ -8,11 +8,11 @@ using std::ostream;
 //using std::ostream;
 
 class racional{
-	double num, den;
+	int num, den;
 	public:
 		racional(int, int = 1);
 		string toString() const;
-		//const racional& simplificar();
+		const racional& simplificar();
 		const racional& operator+=(const racional&);
 		const racional& operator-=(const racional&);
 		const racional& operator*=(const racional&);

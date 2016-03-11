@@ -36,7 +36,7 @@ racional::racional(int num, int den){
 	}
 }
 
-/*const racional& racional::simplificar(){
+const racional& racional::simplificar(){
 	int mayor = 0;
 
 	if (num > den){
@@ -53,7 +53,7 @@ racional::racional(int num, int den){
 	}
 
 	return *this;
-}*/
+}
 
 const racional& racional::operator=(const racional& r){
 	num = r.num;
