@@ -1,26 +1,31 @@
 #ifndef RACIONAL_H
 #define RACIONAL_H
 #include <string>
+#include <iostream>
 
 using std::string;
+using std::ostream;
+//using std::ostream;
 
 class racional{
 	double num, den;
 	public:
-		racional(int = 1, int = 1);
-		const string toString()const;
-		const double toDouble()const;
-		const racional& assign(const racional&);
-		const racional sum(const racional&)const;
-		const racional resta(const racional&)const;
-		const racional minus()const;
-		const racional& add(const racional&);
-		const racional& sub(const racional&);
-		const racional& multi(const racional&);
-		const racional product(const racional&)const;
-		const racional cociente(const racional&)const;
-		const racional& division(const racional&);
+		racional(int, int = 1);
+		string toString() const;
+		//const racional& simplificar();
+		const racional& operator+=(const racional&);
+		const racional& operator-=(const racional&);
+		const racional& operator*=(const racional&);
+		const racional& operator/=(const racional&);
+		const racional& operator=(const racional&);
+		friend ostream& operator<<(ostream& output, const racional&);
+
 };
+const racional operator+(const racional&, const racional&);
+const racional operator-(const racional&, const racional&);
+const racional operator*(const racional&, const racional&);
+const racional operator/(const racional&, const racional&);
+
 #endif
 
 
